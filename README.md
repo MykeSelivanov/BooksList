@@ -4,50 +4,7 @@
  - Convert class based app to hooks (on new branch. Ex: `hooks-solution`, keep class solution on `main` branch)
  - Add redux (on new branch. Ex: `redux-solution`)
 
-# STEP 1
-> Set Up & Get Books
 
-In this step we will add functionality to a full stack React application for retrieving books from a database.
-
-## Instructions
-
-* Clone this Initial [Repo](https://github.com/urakymzhan/ReadABit-starter-code) in your editor and run `npm install` at the project's root.
-
-* This application uses a Mongo database, so be sure to have a `mongodb atlas collection` ready.
-
-* I would prefer Atlas, but if you decide to run database locally. Follow this [guidlines](https://gist.github.com/urakymzhan/8a74099d41d203e175c4bfb0ed57509f)
-
-* Create `.env` file at the root and put your mongodb uri. Ex: `mongodb+srv://<user>:<password>@books.cuyyq.mongodb.net/<dbName>?retryWrites=true&w=majority`
-
-* In order to initially populate the database, run the following command at the project root: `npm run seed`.
-
-* This should insert a few records into the MongoDB.
-
-* Run `npm start` at the project root to start the application.
-
-* If you having errors: try deleting **node_modules** from both client and server. Then rerun `npm install` and `npm start`.
-
-* Open your browser to [localhost:3000](http://localhost:3000) and take a moment to study the rendered application.
-
-  * This example is a readabit application. Currently the app **isn't** fully functional.
-
-![initial homepage](homepage.png)
-
-* Open up `client/src/pages/Books.js` and add code so that when the component mounts, it performs an AJAX request to retrieve all of the books in the database. Once the AJAX request is complete, it should set `this.state.books` equal to the array of books.
-
-* If successful, a list of books should be rendered on the right side of the page.
-
-
-## Hints
-
-* Use the API helper module (`client/src/utils/API.js`) to perform an AJAX request which should return _all_ of the books in the database.
-
-* The only file you will need to modify is `client/src/pages/Books.js`.
-
-# STEP 2
-> Form Handling: Delete, Save, Update Books
-
-In this step we will add functionality to the [STEP 1](#step-1) example for submitting and deleting books from the database.
 
 ### A
 
